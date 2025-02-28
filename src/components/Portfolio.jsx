@@ -3,12 +3,15 @@ import { useState } from 'react';
 const Portfolio = () => {
   const [activeFilter, setActiveFilter] = useState('all');
   
+  // For a production site, these images should be hosted on AWS S3 with CloudFront CDN
+  // This would require setting up an S3 bucket and CloudFront distribution
+  // For now, we're using reliable placeholder images
   const projects = [
     {
       id: 1,
       category: "Roofing",
       title: "Residential Shingle Roof Installation",
-      image: "https://images.unsplash.com/photo-1622035536415-8f3e68c7b9c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      image: "https://images.pexels.com/photos/5417837/pexels-photo-5417837.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       description: "Complete roof replacement with architectural shingles for a small residential property in Richmond.",
       location: "Henrico County",
       completed: "January 2025"
@@ -17,7 +20,7 @@ const Portfolio = () => {
       id: 2,
       category: "Siding",
       title: "Vinyl Siding Renovation",
-      image: "https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      image: "https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       description: "New vinyl siding installation on a small family home with insulation for improved energy efficiency.",
       location: "Chesterfield",
       completed: "December 2024"
@@ -26,7 +29,7 @@ const Portfolio = () => {
       id: 3,
       category: "Decks",
       title: "Backyard Deck Construction",
-      image: "https://images.unsplash.com/photo-1593604572577-1c6c44fa2f9f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      image: "https://images.pexels.com/photos/5997993/pexels-photo-5997993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       description: "Custom-designed composite deck being built for a small backyard space with built-in seating.",
       location: "Richmond",
       completed: "November 2024"
@@ -35,7 +38,7 @@ const Portfolio = () => {
       id: 4,
       category: "Roofing",
       title: "Roof Repair Project",
-      image: "https://images.unsplash.com/photo-1632823471565-1ecf94f1a33f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      image: "https://images.pexels.com/photos/6474343/pexels-photo-6474343.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       description: "Detailed roof repair work showing our team in action on a small residential property.",
       location: "Hanover County",
       completed: "October 2024"
@@ -44,7 +47,7 @@ const Portfolio = () => {
       id: 5,
       category: "Siding",
       title: "Craftsman Trim Detail",
-      image: "https://images.unsplash.com/photo-1534237710431-e2fc698436d0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      image: "https://images.pexels.com/photos/534228/pexels-photo-534228.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       description: "Close-up of premium trim work and corner details on a siding installation project.",
       location: "Midlothian",
       completed: "September 2024"
@@ -53,7 +56,7 @@ const Portfolio = () => {
       id: 6,
       category: "Decks",
       title: "Deck Renovation Before/After",
-      image: "https://images.unsplash.com/photo-1597766353939-ebafc77845ba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      image: "https://images.pexels.com/photos/5490356/pexels-photo-5490356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       description: "Complete transformation of an aging deck into a beautiful outdoor living space.",
       location: "Glen Allen",
       completed: "August 2024"
@@ -62,7 +65,7 @@ const Portfolio = () => {
       id: 7,
       category: "Roofing",
       title: "Roofing Material Selection",
-      image: "https://images.unsplash.com/photo-1635424710928-0544e8512eae?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      image: "https://images.pexels.com/photos/6480707/pexels-photo-6480707.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       description: "Close-up detail of quality roofing materials we use on our residential projects.",
       location: "Richmond",
       completed: "July 2024"
@@ -71,7 +74,7 @@ const Portfolio = () => {
       id: 8,
       category: "Siding",
       title: "Small Home Exterior Makeover",
-      image: "https://images.unsplash.com/photo-1570129476815-ba368ac77013?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      image: "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       description: "Before and after transformation of a small home with new siding and trim work.",
       location: "Chesterfield",
       completed: "June 2024"
