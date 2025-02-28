@@ -1,0 +1,41 @@
+/* App-specific styles */
+.hero-gradient {
+  background: linear-gradient(rgba(27, 54, 93, 0.8), rgba(27, 54, 93, 0.9));
+}
+
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item {
+  overflow: hidden;
+}
+
+.portfolio-item img {
+  transition: transform 0.5s ease;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.05);
+}
+
+.contact-info-item {
+  transition: all 0.3s ease;
+}
+
+.contact-info-item:hover {
+  background-color: #f8f9fa;
+}
+
+/* Sticky call button for mobile */
+.sticky-call {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+}
