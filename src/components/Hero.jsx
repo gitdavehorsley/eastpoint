@@ -1,36 +1,32 @@
 const Hero = () => {
   return (
-    <section className="relative h-screen flex items-center">
+    <section className="hero">
       {/* Background Image with Overlay */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center hero-gradient"
-        style={{ 
-          backgroundImage: "url('https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')",
-          backgroundBlendMode: "overlay"
-        }}
-      ></div>
+      <div className="hero-bg"></div>
+      <div className="hero-overlay"></div>
       
       {/* Content */}
-      <div className="container mx-auto px-4 relative z-10 text-white">
-        <div className="max-w-2xl">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+      <div className="container">
+        <div className="hero-content">
+          <h1 className="hero-title">
             Quality Construction Services in Richmond
           </h1>
-          <p className="text-xl mb-8">
+          <p className="hero-subtitle">
             Specializing in roofing, siding, and custom deck construction with over 15 years of experience.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="hero-buttons">
             <a 
               href="#contact" 
-              className="btn bg-accent text-primary font-bold text-lg px-8 py-3 rounded-md hover:bg-opacity-90 transition-colors"
+              className="btn btn-accent"
             >
               Get Free Estimate
             </a>
             <a 
               href="tel:8048745821" 
-              className="btn bg-white text-primary font-bold text-lg px-8 py-3 rounded-md hover:bg-gray-100 transition-colors flex items-center justify-center"
+              className="btn btn-primary"
+              style={{ backgroundColor: 'white', color: 'var(--primary-color)' }}
             >
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" style={{ marginRight: '0.5rem' }}>
                 <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
               </svg>
               Call Now
@@ -40,11 +36,32 @@ const Hero = () => {
       </div>
       
       {/* Scroll Down Indicator */}
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <div style={{ 
+        position: 'absolute', 
+        bottom: '2.5rem', 
+        left: '50%', 
+        transform: 'translateX(-50%)',
+        color: 'white',
+        animation: 'bounce 2s infinite'
+      }}>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
         </svg>
       </div>
+
+      <style jsx>{`
+        @keyframes bounce {
+          0%, 20%, 50%, 80%, 100% {
+            transform: translateY(0);
+          }
+          40% {
+            transform: translateY(-10px);
+          }
+          60% {
+            transform: translateY(-5px);
+          }
+        }
+      `}</style>
     </section>
   );
 };

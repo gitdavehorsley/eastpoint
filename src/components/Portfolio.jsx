@@ -46,39 +46,38 @@ const Portfolio = () => {
 
   return (
     <section id="portfolio" className="section">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="section-title">Our Projects</h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Take a look at some of our recent roofing, siding, and deck projects in the Richmond area.
-          </p>
-        </div>
+      <div className="container">
+        <h2 className="section-title">Our Projects</h2>
+        <p style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 2rem' }}>
+          Take a look at some of our recent roofing, siding, and deck projects in the Richmond area.
+        </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="portfolio-items">
           {projects.map((project) => (
-            <div key={project.id} className="portfolio-item bg-white rounded-lg overflow-hidden shadow-md">
-              <div className="relative h-64 overflow-hidden">
+            <div key={project.id} className="portfolio-item">
+              <div style={{ position: 'relative' }}>
                 <img 
                   src={project.image} 
                   alt={project.title} 
-                  className="w-full h-full object-cover"
+                  className="portfolio-image"
                 />
-                <div className="absolute top-4 left-4 bg-accent text-primary font-semibold py-1 px-3 rounded-full text-sm">
+                <div className="portfolio-category">
                   {project.category}
                 </div>
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-primary mb-2">{project.title}</h3>
-                <p className="text-gray-600">{project.description}</p>
+              <div className="portfolio-content">
+                <h3 className="portfolio-title">{project.title}</h3>
+                <p>{project.description}</p>
               </div>
             </div>
           ))}
         </div>
 
-        <div className="text-center mt-12">
+        <div style={{ textAlign: 'center', marginTop: '3rem' }}>
           <a 
             href="#contact" 
-            className="btn btn-primary inline-block px-8 py-3 text-lg"
+            className="btn btn-primary"
+            style={{ padding: '0.75rem 2rem', fontSize: '1.125rem' }}
           >
             Start Your Project Today
           </a>
