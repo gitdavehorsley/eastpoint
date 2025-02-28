@@ -20,8 +20,8 @@ const Portfolio = () => {
       id: 2,
       category: "Siding",
       title: "Vinyl Siding Renovation",
-      image: "https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      description: "New vinyl siding installation on a small family home with insulation for improved energy efficiency.",
+      image: "https://pfqstatic.s3.us-east-1.amazonaws.com/eastpoint/dhorsley_image_of_siding_being_replaced_on_a_house_by_a_profe_e7317b0d-6f54-4e2a-bcd3-17d5b588101d_2.png",
+      description: "Professional siding replacement by our experienced crew, ensuring proper installation and weatherproofing.",
       location: "Chesterfield",
       completed: "December 2024"
     },
@@ -29,8 +29,8 @@ const Portfolio = () => {
       id: 3,
       category: "Decks",
       title: "Backyard Deck Construction",
-      image: "https://images.pexels.com/photos/5997993/pexels-photo-5997993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      description: "Custom-designed composite deck being built for a small backyard space with built-in seating.",
+      image: "https://pfqstatic.s3.us-east-1.amazonaws.com/eastpoint/dhorsley_image_of_a_deck_being_built_by_a_professional_crew_-_c4b75d30-6b55-4ef9-9c41-4c36802cb08c_2.png",
+      description: "Custom-designed deck being built by our professional crew, with attention to detail and quality craftsmanship.",
       location: "Richmond",
       completed: "November 2024"
     },
