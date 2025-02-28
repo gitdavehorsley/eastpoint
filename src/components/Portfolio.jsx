@@ -38,7 +38,7 @@ const Portfolio = () => {
       id: 4,
       category: "Roofing",
       title: "Roof Repair Project",
-      image: "https://images.pexels.com/photos/6474343/pexels-photo-6474343.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      image: "https://pfqstatic.s3.us-east-1.amazonaws.com/eastpoint/dhorsley_oof_Repair_Project_Hanover_County_October_2024_Detai_ff648d35-9847-4e20-9a0a-090c5a040ca9_0.png",
       description: "Detailed roof repair work showing our team in action on a small residential property.",
       location: "Hanover County",
       completed: "October 2024"
@@ -56,7 +56,7 @@ const Portfolio = () => {
       id: 6,
       category: "Decks",
       title: "Deck Renovation Before/After",
-      image: "https://images.pexels.com/photos/5490356/pexels-photo-5490356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      image: "https://pfqstatic.s3.us-east-1.amazonaws.com/eastpoint/dhorsley_Deck_Renovation_BeforeAfter_Glen_Allen_August_2024_C_92923096-92a5-431d-9d28-5be5abd4cb43_0.png",
       description: "Complete transformation of an aging deck into a beautiful outdoor living space.",
       location: "Glen Allen",
       completed: "August 2024"
